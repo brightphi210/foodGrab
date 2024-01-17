@@ -1,23 +1,39 @@
-import { View, Text, StyleSheet } from 'react-native'
-import React from 'react'
-import Colors from '../constants/Colors'
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet, Image } from 'react-native';
+import Colors from '../constants/Colors';
+import { useNavigation } from 'expo-router';
 
-const index = () => {
+const IndexScreen = () => {
+  const myNavigate = useNavigation();
+
+  useEffect(() => {
+    setTimeout(() => {
+        myNavigate.navigate('welcomeOne');
+    }, 5000);
+  }, []);
+
   return (
     <View style={styles.container}>
-      <Text>index</Text>
+      <Image
+        source={require('../assets/images/foodGrab2.png')}
+        style={styles.imageDiv}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default index
-
+export default IndexScreen;
 
 const styles = StyleSheet.create({
-    container : {
-        flex : 1,
-        justifyContent : 'center',
-        alignItems : 'center',
-        backgroundColor : Colors.myRed
-    }
-})
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: Colors.myRed,
+  },
+
+  imageDiv: {
+    width: 150,
+    height: 50,
+  },
+});

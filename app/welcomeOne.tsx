@@ -36,7 +36,6 @@ const WelcomeOne = () => {
                 <Text style={{color : 'white', fontSize : 15, alignSelf : 'center'}}>Next</Text>
             </TouchableOpacity>
         </Link>
-    {/* </View> */}
     </SafeAreaView>
   )
 }

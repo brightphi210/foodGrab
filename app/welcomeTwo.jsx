@@ -8,33 +8,33 @@ const WelcomeTwo = () => {
   return (
     <SafeAreaView style={styles.container}>
 
-        <Link href={'/welcomeTwo'} style={styles.skip}>
-            <TouchableOpacity >
-                <Text style={{color : 'black', fontSize : 15, alignSelf : 'center'}}>Skip</Text>
-            </TouchableOpacity>
-        </Link>
+      <Link href={'/welcomeTwo'} style={styles.skip}>
+        <TouchableOpacity >
+          <Text style={{ color: 'black', fontSize: 15, alignSelf: 'center' }}>Skip</Text>
+        </TouchableOpacity>
+      </Link>
 
-        <View style={styles.innerContainer}>
-            <View>
-              <Image
-                  source={require('../assets/images/2.png')}
-                  style={styles.imageDiv}
-              />
+      <View style={styles.innerContainer}>
+        <View>
+          <Image
+            source={require('../assets/images/2.png')}
+            style={styles.imageDiv}
+          />
 
-                <View style={styles.innerContainerText}>
-                    <Text style={{textAlign : 'center', fontSize : 25, color: Colors.myRed, fontWeight : 'bold', paddingVertical : 10}}>Discover new cuisines</Text>
-                    <Text style={{textAlign : 'center', fontSize : 15 }}>From local favorites to global delights, find the perfect dish for every craving.</Text>
-                </View>
+          <View style={styles.innerContainerText}>
+            <Text style={{ textAlign: 'center', fontSize: 25, color: Colors.myRed, fontWeight: 'bold', paddingVertical: 10 }}>Discover new cuisines</Text>
+            <Text style={{ textAlign: 'center', fontSize: 15 }}>From local favorites to global delights, find the perfect dish for every craving.</Text>
+          </View>
 
 
-            
-            </View>
+
         </View>
-        <Link href={'/welcomeThree'} asChild>
-            <TouchableOpacity style={styles.btnDiv}>
-                <Text style={{color : 'white', fontSize : 15}}>Next</Text>
-            </TouchableOpacity>
-        </Link>
+      </View>
+      <Link href={'/welcomeThree'} asChild>
+        <TouchableOpacity style={styles.btnDiv}>
+          <Text style={{ color: 'white', fontSize: 15 }}>Next</Text>
+        </TouchableOpacity>
+      </Link>
     </SafeAreaView>
   )
 }
@@ -47,53 +47,53 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: Colors.myGray,
-    flexWrap : 'wrap',
-    margin : 'auto'
+    flexWrap: 'wrap',
+    margin: 'auto'
   },
 
   imageDiv: {
     width: 250,
     height: 250,
-    alignSelf : 'center',
-    marginBottom : 60
+    alignSelf: 'center',
+    marginBottom: 60
   },
 
-  btnDiv : {
-      position : 'absolute',
-      bottom : 50,
-      left : 0,
-      right : 0,
-      height : 50,
-      backgroundColor : Colors.myRed,
-      flexDirection : 'row',
-      alignItems : 'center',
-      paddingHorizontal : 20,
-      marginHorizontal : 30,
-      justifyContent : 'center',
-      borderRadius : 30,
+  btnDiv: {
+    position: 'absolute',
+    bottom: 50,
+    left: 0,
+    right: 0,
+    height: 50,
+    backgroundColor: Colors.myRed,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    marginHorizontal: 30,
+    justifyContent: 'center',
+    borderRadius: 30,
   },
 
-  innerContainer : {
-      display : 'flex',
-      justifyContent : 'center',
-      margin : 'auto',
-      width : '100%'
+  innerContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    margin: 'auto',
+    width: '100%'
   },
 
-  innerContainerText : {
-      paddingHorizontal : 30
+  innerContainerText: {
+    paddingHorizontal: 30
   },
 
 
-  skip : {
-    position : 'absolute',
-    top : 60,
-    right : 30,
-    flexDirection : 'row',
+  skip: {
+    position: 'absolute',
+    top: 60,
+    right: 30,
+    flexDirection: 'row',
   },
-    
 
 
 
 
-  });
+
+});

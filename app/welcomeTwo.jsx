@@ -23,14 +23,14 @@ const WelcomeTwo = () => {
 
                 <View style={styles.innerContainerText}>
                     <Text style={{textAlign : 'center', fontSize : 25, color: Colors.myRed, fontWeight : 'bold', paddingVertical : 10}}>Discover new cuisines</Text>
-                    <Text style={{textAlign : 'center', fontSize : 15 }}>Browse, Save, and Cook Amazing Dishes with foodie delight!</Text>
+                    <Text style={{textAlign : 'center', fontSize : 15 }}>From local favorites to global delights, find the perfect dish for every craving.</Text>
                 </View>
 
 
             
             </View>
         </View>
-        <Link href={'/welcomeTwo'} asChild>
+        <Link href={'/welcomeThree'} asChild>
             <TouchableOpacity style={styles.btnDiv}>
                 <Text style={{color : 'white', fontSize : 15}}>Next</Text>
             </TouchableOpacity>
@@ -52,10 +52,10 @@ const styles = StyleSheet.create({
   },
 
   imageDiv: {
-    width: 300,
-    height: 300,
+    width: 250,
+    height: 250,
     alignSelf : 'center',
-    marginBottom : 100
+    marginBottom : 60
   },
 
   btnDiv : {

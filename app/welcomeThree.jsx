@@ -4,10 +4,9 @@ import Colors from '../constants/Colors'
 import { Link } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
-const WelcomeOne = () => {
+const WelcomeThree = () => {
   return (
     <SafeAreaView style={styles.container}>
-            {/* <View > */}
         <Link href={'/welcomeTwo'} style={styles.skip}>
             <TouchableOpacity >
                 <Text style={{color : 'black', fontSize : 15, alignSelf : 'center'}}>Skip</Text>
@@ -18,29 +17,29 @@ const WelcomeOne = () => {
         <View style={styles.innerContainer}>
             <View>
                 <Image
-                    source={require('../assets/images/1.png')}
+                    source={require('../assets/images/4.png')}
                     style={styles.imageDiv}
                 />
 
                 <View style={styles.innerContainerText}>
-                    <Text style={{textAlign : 'center', fontSize : 25, color: Colors.myRed, fontWeight : 'bold', paddingVertical : 10}}>Welcome to Foodie Delight😊</Text>
-                    <Text style={{textAlign : 'center', fontSize : 15 }}>Browse, Save, and Cook Amazing Dishes with foodie delight!</Text>
+                    <Text style={{textAlign : 'center', fontSize : 25, color: Colors.myRed, fontWeight : 'bold', paddingVertical : 10}}>Lightning-fast delivery</Text>
+                    <Text style={{textAlign : 'center', fontSize : 15 }}>Our priority is getting your food to you quickly. Experience speedy delivery.</Text>
                     <Text></Text>
                 </View>
             </View>
         </View>
        
 
-       <Link href={'/welcomeTwo'} asChild style={styles.btnDiv}>
+       <Link href={'/Register/login'} asChild style={styles.btnDiv}>
             <TouchableOpacity >
-                <Text style={{color : 'white', fontSize : 15, alignSelf : 'center'}}>Next</Text>
+                <Text style={{color : 'white', fontSize : 15, alignSelf : 'center'}}>Get Started</Text>
             </TouchableOpacity>
         </Link>
     </SafeAreaView>
   )
 }
 
-export default WelcomeOne
+export default WelcomeThree
 
 const styles = StyleSheet.create({
     container: {
@@ -53,10 +52,10 @@ const styles = StyleSheet.create({
     },
   
     imageDiv: {
-      width: 250,
-      height: 250,
+      width: 200,
+      height: 200,
       alignSelf : 'center',
-      marginBottom : 100
+      marginBottom : 60
     },
 
     btnDiv : {

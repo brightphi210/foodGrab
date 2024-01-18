@@ -19,6 +19,23 @@ export default function RootLayoutNav() {
         <Stack.Screen name="index" options={{headerShown : false}} />
         <Stack.Screen name="welcomeOne" options={{headerShown : false}} />
         <Stack.Screen name="welcomeTwo" options={{headerShown : false}} />
+        <Stack.Screen name="welcomeThree" options={{headerShown : false}} />
+        <Stack.Screen name="Register/login" options={{headerShown : false}} />
+        <Stack.Screen name="Register/success" options={{headerShown : false}} />
+
+        <Stack.Screen 
+          name="Register/verify" options={{
+          presentation : 'modal',
+          headerTitle : '',
+          headerTitleAlign : 'center',
+          headerShadowVisible : false,
+          headerBackVisible : false,
+          headerLeft: () => ( 
+            <TouchableOpacity onPress={()=> navigate.goBack()}>
+              <Ionicons name='arrow-back' size={25}/>
+            </TouchableOpacity>
+          ),
+        }}/>
       </Stack>
   );
 }

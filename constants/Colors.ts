@@ -18,6 +18,7 @@ export default {
   },
 
   myRed : '#FA4319',
-  myGray : '#F6F6F6'
+  myGray : '#F6F6F6',
+  borderColor : '#D1D1D1'
 
 };

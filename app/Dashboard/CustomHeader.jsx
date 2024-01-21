@@ -25,13 +25,14 @@ const CustomHeader = () => {
             </View>
 
             <View style={styles.containerDivTwo}>
-                <Ionicons name = 'search' style={{position : 'absolute', top : 21, left : 35, fontSize : 18}}/>
+                <Ionicons name = 'search' style={{position : 'absolute', top : 21, left : 35, fontSize : 18, zIndex : 3}}/>
                 <TextInput placeholder='Search your favourite food' 
                     style={{
                         borderColor : Colors.borderColor, 
                         padding :15, borderWidth : 1, borderStyle : 'solid',
                         paddingHorizontal : 50,
-                        borderRadius : 10
+                        borderRadius : 10,
+                        backgroundColor : 'white'
                     }}
                 />
                 <Ionicons name='list' style={{position : 'absolute', top : 21, right : 35, fontSize : 18}}/>
@@ -48,12 +49,14 @@ const styles = StyleSheet.create({
 
     safeArea: {
         flex: 1,
-        backgroundColor : 'white'
+        backgroundColor : Colors.myGray,
+        marginBottom : 10,
+        zIndex : 1
     },
 
     container: {
-        height: 130,
-        backgroundColor: 'white', 
+        height: 100,
+        backgroundColor: Colors.myGray, 
     },
 
     containerDivOne: { 

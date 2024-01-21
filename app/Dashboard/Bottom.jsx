@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons'
+import Colors from '../../constants/Colors'
 
 const Bottom = () => {
   return (
@@ -41,10 +42,11 @@ const styles = StyleSheet.create({
         flexDirection : 'row',
         width : '100%',
         justifyContent : 'center',
-        backgroundColor : 'white',
+        backgroundColor : Colors.myGray,
         alignItems : 'center',
         justifyContent: 'space-between',
-        padding : 20,
+        height : 80,
+
         paddingHorizontal : 30,
     },
 

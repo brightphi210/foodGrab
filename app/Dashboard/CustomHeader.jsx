@@ -15,7 +15,7 @@ const CustomHeader = () => {
         <View style={styles.container}>
             <View style ={styles.containerDivOne}>
                 <TouchableOpacity style={styles.titleContainer}>
-                    <Text style={styles.title}>Hello, <Text style={{fontWeight : '500', fontSize : 20}}>Sunday Kingsley</Text></Text>
+                    <Text style={styles.title}>Hello, <Text style={{fontWeight : 'bold', fontSize : 20}}>Sunday Kingsley</Text></Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.profileButton}>
@@ -25,17 +25,17 @@ const CustomHeader = () => {
             </View>
 
             <View style={styles.containerDivTwo}>
-                <Ionicons name = 'search' style={{position : 'absolute', top : 21, left : 35, fontSize : 18, zIndex : 3}}/>
+                <Ionicons name = 'search' style={{position : 'absolute', top : 20, left : 35, fontSize : 18, zIndex : 3}}/>
                 <TextInput placeholder='Search your favourite food' 
                     style={{
                         borderColor : Colors.borderColor, 
-                        padding :15, borderWidth : 1, borderStyle : 'solid',
+                        padding :13, borderWidth : 1, borderStyle : 'solid',
                         paddingHorizontal : 50,
                         borderRadius : 10,
-                        backgroundColor : 'white'
+                        // backgroundColor : 'white'
                     }}
                 />
-                <Ionicons name='list' style={{position : 'absolute', top : 21, right : 35, fontSize : 18}}/>
+                <Ionicons name='list' style={{position : 'absolute', top : 20, right : 35, fontSize : 18}}/>
             </View>
         </View>
 
@@ -50,12 +50,12 @@ const styles = StyleSheet.create({
     safeArea: {
         flex: 1,
         backgroundColor : Colors.myGray,
-        marginBottom : 10,
+        marginBottom : 35,
         zIndex : 1
     },
 
     container: {
-        height: 100,
+        height: 120,
         backgroundColor: Colors.myGray, 
     },
 
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     },
 
     title : {
-        fontSize : 14,
+        fontSize : 17,
         color : Colors.medium
     },
 

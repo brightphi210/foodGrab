@@ -12,7 +12,7 @@ const Bottom = () => {
             <Ionicons name='home-outline' style={styles.eachIcon}/>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.eachIcons}>
+            <TouchableOpacity style={styles.eachIcon}>
                 <Ionicons name='cart-outline' style={styles.eachIcon}/>
             </TouchableOpacity>
 
@@ -38,6 +38,8 @@ const styles = StyleSheet.create({
         left : 0,
     },
 
+    
+
     subContainer : {
         flexDirection : 'row',
         width : '100%',
@@ -45,8 +47,7 @@ const styles = StyleSheet.create({
         backgroundColor : Colors.myGray,
         alignItems : 'center',
         justifyContent: 'space-between',
-        height : 80,
-
+        height : 60,
         paddingHorizontal : 30,
     },
 

@@ -3,6 +3,7 @@ import {  Stack } from 'expo-router';
 import { TouchableOpacity } from 'react-native';
 import { useNavigation } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import CustomHeader from './Dashboard/CustomHeader'
 
 export const unstable_settings = {
   initialRouteName: 'index',
@@ -22,6 +23,11 @@ export default function RootLayoutNav() {
         <Stack.Screen name="welcomeThree" options={{headerShown : false}} />
         <Stack.Screen name="Register/login" options={{headerShown : false}} />
         <Stack.Screen name="Register/success" options={{headerShown : false}} />
+        <Stack.Screen name="Dashboard/DashHome" options={{
+          headerTitle : '',
+          header : ()=> (<CustomHeader />),
+        
+        }} />
 
         <Stack.Screen 
           name="Register/verify" options={{

@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     },
 
     eachIcon : {
-        fontSize : 25
+        fontSize : 20
     },
 
     

@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     otpText : {
         borderColor : Colors.borderColor,
         borderWidth : 1,
-        width : '100%',
+        width : '20%',
         height : 50,
         borderRadius : 5,
         
@@ -80,9 +80,7 @@ const styles = StyleSheet.create({
     OTPDivText : {
         width : '100%',
         flexDirection : 'row',
-        gap : 30,
-        justifyContent : 'center',
-        paddingHorizontal : 143,
+        justifyContent : 'space-between',
         marginTop : 10
     }
 

@@ -5,12 +5,13 @@ import Bottom from './Bottom'
 import Colors from '../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
 import { Link } from 'expo-router'
+import { useNavigation } from 'expo-router';
 const DashHome = () => {
 
     const myNavigate = useNavigation();
 
     const redirect = () =>{
-        myNavigate.navigate('Dashboard/DashHome');
+        myNavigate.navigate('Dashboard/DashDesc');
     }
   return (
 
@@ -63,7 +64,7 @@ const DashHome = () => {
                 
                     
                 <View style={styles.cardGen}>
-                    <TouchableOpacity style={styles.eachCard} >
+                    <TouchableOpacity style={styles.eachCard} onPress={redirect}>
                         <Image
                                 source={require('../../assets/images/1.png')}
                                 style={{width : 90, height : 90, alignSelf : 'center'}}
@@ -100,7 +101,7 @@ const DashHome = () => {
                 </View>
 
                 <View style={styles.cardGen}>
-                    <TouchableOpacity style={styles.eachCard}>
+                    <TouchableOpacity style={styles.eachCard} onPress={redirect}>
                         <Image
                                 source={require('../../assets/images/2.png')}
                                 style={{width : 90, height : 90, alignSelf : 'center'}}
@@ -116,7 +117,7 @@ const DashHome = () => {
                         </View>
                     </TouchableOpacity>
 
-                    <TouchableOpacity style={styles.eachCard}>
+                    <TouchableOpacity style={styles.eachCard} onPress={redirect}>
                         <Image
                                 source={require('../../assets/images/1.png')}
                                 style={{width : 90, height : 90,  alignSelf : 'center'}}

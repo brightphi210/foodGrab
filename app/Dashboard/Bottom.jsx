@@ -2,17 +2,23 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons'
 import Colors from '../../constants/Colors'
+import { useNavigation } from 'expo-router';
 
 const Bottom = () => {
+    const navigate = useNavigation()
     return (
         <View style={styles.container}>
 
             <View style={styles.subContainer}>
-                <TouchableOpacity style={styles.eachIcon}>
+                <TouchableOpacity style={styles.eachIcon} onPress={() => {
+                    navigate.navigate("Dashboard/DashHome")
+                }}>
                     <Ionicons name='home-outline' style={styles.eachIcon} />
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.eachIcon}>
+                <TouchableOpacity style={styles.eachIcon} onPress={() => {
+                    navigate.navigate("Dashboard/Cart")
+                }}>
                     <Ionicons name='cart-outline' style={styles.eachIcon} />
                 </TouchableOpacity>
 

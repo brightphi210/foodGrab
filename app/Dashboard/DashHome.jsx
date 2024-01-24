@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import Bottom from './Bottom'
 import Colors from '../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
-import { Link } from 'expo-router'
+import { Link, useNavigation } from 'expo-router'
 const DashHome = () => {
 
     const myNavigate = useNavigation();

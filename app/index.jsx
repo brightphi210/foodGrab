@@ -8,7 +8,7 @@ const IndexScreen = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      myNavigate.navigate('Dashboard/DashHome');
+      myNavigate.navigate('welcomeOne');
     }, 5000);
   }, []);
 

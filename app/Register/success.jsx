@@ -24,7 +24,7 @@ const Success = () => {
             </View>
 
 
-            <Link href={'/success'} asChild style={styles.btnDiv}>
+            <Link href={'Dashboard/DashHome'} asChild style={styles.btnDiv}>
                 <TouchableOpacity >
                     <Text style={{ color: 'white', fontSize: 15, alignSelf: 'center' }}>Proceed to Dashboard</Text>
                 </TouchableOpacity>

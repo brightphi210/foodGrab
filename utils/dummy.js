@@ -1,5 +1,6 @@
 const dummyData = [
   {
+    id: 1,
     image: "/assets/images/1.png",
     title: "Spicy Fried Chicken",
     description:
@@ -8,6 +9,7 @@ const dummyData = [
     quantity: 1,
   },
   {
+    id: 2,
     image: "/assets/images/2.png",
     title: "Spicy Chicken Alfredo Pasta",
     description:
@@ -16,6 +18,7 @@ const dummyData = [
     quantity: 1,
   },
   {
+    id: 3,
     image: "/assets/images/3.png",
     title: "Grilled Salmon",
     description:

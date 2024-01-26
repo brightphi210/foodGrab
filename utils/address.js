@@ -4,7 +4,7 @@ const addressData = [
     location: "2025 M Street, NW, Washington, DC, 20036",
   },
   {
-    title: "Home",
+    title: "Office",
     location: "2025 M Street, NW, Washington, DC, 20036",
   },
 ];

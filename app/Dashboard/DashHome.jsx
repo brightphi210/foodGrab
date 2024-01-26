@@ -14,8 +14,6 @@ const DashHome = () => {
     }
     return (
 
-
-
         <SafeAreaView style={styles.container}>
             <View style={styles.subContainer}>
 
@@ -58,9 +56,6 @@ const DashHome = () => {
                         </TouchableOpacity>
 
                     </ScrollView>
-
-
-
 
                     <View style={styles.cardGen}>
                         <TouchableOpacity style={styles.eachCard} >
@@ -134,10 +129,7 @@ const DashHome = () => {
                     </View>
                 </ScrollView>
                 <Bottom />
-
             </View>
-
-
         </SafeAreaView>
     )
 }
